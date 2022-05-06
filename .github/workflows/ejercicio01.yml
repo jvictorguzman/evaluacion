@@ -1,11 +1,11 @@
-name: Pregunta_1
+name: Pregunta1
 
 on: 
   push: 
     branches:
       - main
 jobs:
-  pregunta 1:
+  Pregunta1:
     runs-on: ubuntu-latest
     steps:
     
