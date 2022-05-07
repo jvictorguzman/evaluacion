@@ -10,7 +10,8 @@ jobs:
     steps:
     
       - name: Step 1 - Crear directorio examen
-        run: mkdir examen
+        run: |
+             mkdir examen
              mkdir artefacto
         
       - name: Step 2 - Adicionar archivos al directorio examen
