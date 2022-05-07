@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      - name: Step 1 - Crear directorio examen
+      - name: step 1 - Crear directorio examen
         run: |
              mkdir examen
              mkdir artefacto
         
-      - name: Step 2 - Adicionar archivos al directorio examen
+      - name: step 2 - Adicionar archivos al directorio examen
         run: |
           cd examen
           echo 'Mensaje examen 1'    > examen01.html
@@ -24,22 +24,22 @@ jobs:
           echo 'Mensaje examen 5'    > examen05.html          
           cd ..
       
-      - name: Step 3 - Creacion del artefacto ZIP
+      - name: step 3 - Creacion del artefacto ZIP
       - uses: papeloto/action-zip@v1
         with:
           files: examen/
           dest: examen.zip
                                     
-      - name: Step 4 - Verificacion de la creacion de artefactos ZIP
+      - name: step 4 - Verificacion de la creacion de artefactos ZIP
         run: ls -la
         
-      - name: Step 5 - Upload Artefacto
+      - name: step 5 - Upload Artefacto
         uses: actions/upload-artifact@v3
         with:
           name: Artefacto_EXAMEN
           path: examen.zip
           
-      - name: Step 6 - Download Artefacto
+      - name: step 6 - Download Artefacto
         uses: actions/download-artifact@v3
         with:
           name: Artefacto_EXAMEN
