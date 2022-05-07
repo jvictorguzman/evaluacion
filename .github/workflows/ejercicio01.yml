@@ -39,13 +39,13 @@ jobs:
           name: Artefacto_EXAMEN
           path: examen.zip
           
-      - name: Step 6 - Download Artefacto
+      - name: Step 6 - Download Artifacto
         uses: actions/download-artifact@v3
         with:
           name: Artefacto_EXAMEN
           path: ~/artefacto
           
-      - name: step 7 - Verificacion de la descarga de artefacto
+      - name: step 7 - Verificacion de la descarga de arefactos
         run: ls -la ~/artefacto
       
         
