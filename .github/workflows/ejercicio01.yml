@@ -1,11 +1,11 @@
-name: Pregunta1 artefacto
+name: Pregunta1
 
 on: 
   push: 
     branches:
       - main
 jobs:
-  Pregunta1-upload-download-artefacto:
+  Pregunta1:
     runs-on: ubuntu-latest
     steps:
     
