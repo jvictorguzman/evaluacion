@@ -45,7 +45,7 @@ jobs:
           name: Artefacto_EXAMEN
           path: ~/artefacto
           
-      - name: step 7 - Verificacion de la descarga del artefacto
+      - name: step 7 - Verificacion de la descarga del artefactos
         run: ls -la ~/artefacto
       
         
